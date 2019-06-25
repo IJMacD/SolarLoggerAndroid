@@ -91,7 +91,7 @@ class SolarLoggerWidgetProvider : AppWidgetProvider() {
         Log.d("SolarLogger", "Updating")
         val task = UpdaterTask(context, appWidgetManager, appWidgetIds)
 
-        task.execute("https://ijmacd.com/solar.php?method=data&delta=3600")
+        task.execute("https://ijmacd.com/solar.php?method=data&limit=1")
 
         // Show pending state
         appWidgetIds?.forEach { appWidgetId ->
